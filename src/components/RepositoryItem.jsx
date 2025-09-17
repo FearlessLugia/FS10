@@ -6,7 +6,7 @@ import theme from '../theme'
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
-    backgroundColor: theme.colors.textWhite
+    backgroundColor: theme.colors.white
   },
 
   imageContainer: {
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     flexShrink: 1
   },
   language: {
-    color: theme.colors.textWhite,
+    color: theme.colors.white,
     backgroundColor: theme.colors.primary,
     alignSelf: 'flex-start',
     padding: 5,

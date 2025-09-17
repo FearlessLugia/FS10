@@ -4,7 +4,7 @@ import { Link } from 'react-router-native'
 
 const styles = StyleSheet.create({
   text: {
-    color: theme.colors.textWhite,
+    color: theme.colors.white,
     fontSize: theme.fontSizes.subheading,
     fontWeight: theme.fontWeights.bold,
     padding: theme.fontSizes.subheading
