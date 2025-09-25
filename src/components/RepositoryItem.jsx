@@ -42,22 +42,22 @@ const styles = StyleSheet.create({
 })
 
 const RepositoryItem = ({ item }) => (
-  <View style={styles.container}>
+  <View testID="repositoryItem" style={styles.container}>
     <View style={styles.imageContainer}>
       <Image source={{ uri: item.ownerAvatarUrl }} style={styles.image} />
 
       <View style={styles.description}>
-        <Text fontSize='subheading' fontWeight='bold'>{item.fullName}</Text>
-        <Text fontSize='subheading'>{item.description}</Text>
-        <Text style={styles.language}>{item.language}</Text>
+        <Text testID="fullName" fontSize='subheading' fontWeight='bold'>{item.fullName}</Text>
+        <Text testID="description" fontSize='subheading'>{item.description}</Text>
+        <Text testID="language" style={styles.language}>{item.language}</Text>
       </View>
     </View>
 
     <View style={styles.footer}>
-      <FooterItem name='Stars' value={item.stargazersCount} />
-      <FooterItem name='Forks' value={item.forksCount} />
-      <FooterItem name='Reviews' value={item.reviewCount} />
-      <FooterItem name='Rating' value={item.ratingAverage} />
+      <FooterItem testID="stargazersCount" name='Stars' value={item.stargazersCount} />
+      <FooterItem testID="forksCount" name='Forks' value={item.forksCount} />
+      <FooterItem testID="reviewCount" name='Reviews' value={item.reviewCount} />
+      <FooterItem testID="ratingAverage" name='Rating' value={item.ratingAverage} />
     </View>
   </View>
 )

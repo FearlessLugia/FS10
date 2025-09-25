@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   }
 })
 
-const FooterItem = ({ name, value }) => {
+const FooterItem = ({ name, value, testID }) => {
   const formatValue = (value) => {
     if (value >= 1000) {
       return (value / 1000).toFixed(1) + 'k'
@@ -20,7 +20,7 @@ const FooterItem = ({ name, value }) => {
 
   return (
     <View style={styles.container}>
-      <Text fontWeight='bold'>{formatValue(value)}</Text>
+      <Text testID={testID} fontWeight='bold'>{formatValue(value)}</Text>
       <Text>{name}</Text>
     </View>
   )
